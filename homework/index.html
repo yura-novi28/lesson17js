@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <main class="main">
+        <div class="clock">
+            <div class="block clock__block clock__block--marginbottom clock__block--flexC">
+                <div class="clock__block-small">
+                    <p class="date">01.01.2025</p>
+                    <p class="time">00:00:00</p>
+                </div>
+            </div>
+            <div class="block clock__block clock__block--marginbottom clock__block--flexAround">
+                <div class="stopwatch clock__stopwatch">
+                    <div class="dial-container">
+                        <p id="dialstopHou" class="clock__stopwatch-dial clock__stopwatch-dial--58w">00</p>
+                        <p id="dialstopMin" class="clock__stopwatch-dial clock__stopwatch-dial--70w">:00</p>
+                        <p id="dialstopSec" class="clock__stopwatch-dial clock__stopwatch-dial--70w">:00</p>
+                        <p id="dialstopMil" class="clock__stopwatch-dial clock__stopwatch-dial--98w">:000</p>
+                    </div>
+                    <form class="clock__stopwatch-buttons">
+                        <button id="start" class="clock__stopwatch-button button">START</button>
+                        <button id="loop" class="clock__stopwatch-button button">LOOP</button>
+                        <button id="stop" class="clock__stopwatch-button button">STOP</button>
+                        <button id="reset" class="clock__stopwatch-button button">RESET</button>
+                    </form>
+                </div>
+                <div class="loop clock__loop">
+                </div>
+            </div>
+            <div class="block clock__block">
+                <div class="timer clock__timer">
+                    <div class="minutes-container">
+                        <p id="numTimer" class="timer__title">
+                            25
+                        </p>
+                        <p class="timer__subtitle">
+                            MINUTES
+                        </p>
+                        <form class="clock__timer-buttons clock__timer-buttons--flex">
+                            <button id="setUp" class="button button--small">+</button>
+                            <button id="setDown" class="button button--small">-</button>
+                        </form>
+                    </div>
+                    <div class="countdown">
+                        <p id="timerDial" class="timer__title">
+                            00:00
+                        </p>
+                        <form class="clock__timer-buttons">
+                            <button id="startTimer" class="button">START</button>
+                            <button id="stopTimer" class="button">STOP</button>
+                            <button id="resetTimer" class="button">RESET</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
